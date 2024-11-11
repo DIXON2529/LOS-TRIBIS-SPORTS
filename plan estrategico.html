@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu despegable</title>
+    <link rel="stylesheet" type="text/css" href="dixon.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>LOS TRIBIS SPORTS</h1>
+        </div>
+       
+    </header>
+ <hr>
+    <nav id="header">
+        <ul class="nav">
+                 <li><a href="index2.html">Inicio</a></li>
+				<li><a href="quienes somos.html">QUIENES SOMOS</a>
+				<li><a href="plan estrategico.html">plan estrategico</a></li>
+				<li><a href="proyecto.html">proyecto</a>
+					<ul>
+						<li><a href="objetivos.html">objetivos</a></li>
+						<li><a href="marco teorico.html">M.T</a></li>
+						<li><a href="marco legal.html">M.L</a></li>
+						<li><a href="crograma.html">Cronogrma</a>
+							
+						</li>
+					</ul>
+				</li>
+                    
+                        
+                </ul>
+            </li>
+                     <li><a href="solucion.html">SOLUCIÓN TECNOLÓGICA</a></li>
+                     <li><a href="evidencias2.html">EVIDENCIAS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2></h2>
+            <p></p>
+        </section>
+        
+        <div class="content">
+            <!-- Contenido principal aquí -->
+        </div>
+
+        <footer>
+            
+            <div class="footer">
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/profile.php?id=61565697273241&mibextid=LQQJ4d"><img src="facebook" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/los_tribis_sports?igsh=MWEzNzFiOGg3Nmw0cw%3D%3D&utm_source=qr"><img src="instagram.jpg" alt="Instagram"></a>
+                    
+                </div>
+            </div>
+        </footer>
+    </main>
+         <main class="area">
+        <div class="menu1">
+            <button class="menu—button" onclick="showImage('image1')">Vision</button>
+            <button class="menu—button" onclick="showImage('image2')">Mision</button>
+            <button class="menu—button" onclick="showImage('image3')">Valores corporativos</button>
+        </div> 
+        <div class="image—container1"> 
+            <img id="image1" class="image" src="vision.jpg"> 
+            <img id="image2" class="image" src="MISION.jpg"> 
+            <img id="image3" class="image" src="valores.jpg"> 
+
+
+    <script>
+        function showImage(imageId) {
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.style.display = 'none');
+    
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

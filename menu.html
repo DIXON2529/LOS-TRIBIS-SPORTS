@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu despegable</title>
+    <link rel="stylesheet" type="text/css" href="dixon.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>LOS TRIBIS SPORTS</h1>
+        </div>
+       
+    </header>
+ <hr>
+    <nav id="header">
+        <ul class="nav">
+            <li><a href="inicio.html">INICIO</a></li>
+            <li><a href="quienes somos.html">QUIENES SOMOS</a>
+                <ul>
+                    <li><a href="">Plan Estrategico</a></li>
+                    <li><a href="">Proyecto</a></li>
+					<li><a href="objetivos.html">objetivos</a></li>
+						<li><a href="marco teorico.html">M.T</a></li>
+						<li><a href="marco legal.html">M.L</a></li>
+						<li><a href="crograma.html">Cronogrma</a>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+                       
+                    </ul>
+                </li>
+            </ul>
+        </li>
+                    <li><a href="">formulacion</a>
+                        
+                </ul>
+            </li>
+            <li><a href="solucion.html">SOLUCIÓN TECNOLÓGICA</a></li>
+            <li><a href="evidencias2.html">EVIDENCIAS</a></li>
+            
+        </ul>
+
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2> Introduction </h2>
+            <p>Welcome to our exciting world of sports. Here you will find all the information, news and advice about your favorite sports. Join our community passionate about sports and discover everything you need to stay active and healthy.</p>
+        </section>
+        
+        <div class="content">
+            <!-- Contenido principal aquí -->
+        </div>
+
+        <footer>
+            
+            <div class="footer">
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/profile.php?id=61565697273241&mibextid=LQQJ4d"><img src="facebook" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/los_tribis_sports?igsh=MWEzNzFiOGg3Nmw0cw%3D%3D&utm_source=qr"><img src="instagram.jpg" alt="Instagram"></a>
+                    
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        function showImage(imageId) {
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.style.display = 'none');
+    
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+<html>
+	<head>
+		<title>Menu Desplegable</title>
+		<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="plan estrategico.html">plan estrategico</a></li>
+				<li><a href="proyecto.html">proyecto</a>
+					<ul>
+						<li><a href="objetivos.html">objetivos</a></li>
+						<li><a href="marco teorico.html">M.T</a></li>
+						<li><a href="marco legal.html">M.L</a></li>
+						<li><a href="crograma.html">Cronogrma</a>
+							<ul>
+								<li><a href="">Submenu1</a></li>
+								<li><a href="">Submenu2</a></li>
+								<li><a href="">Submenu3</a></li>
+								<li><a href="">Submenu4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Acerca de</a>
+					<ul>
+						<li><a href="">Submenu1</a></li>
+						<li><a href="">Submenu2</a></li>
+						<li><a href="">Submenu3</a></li>
+						<li><a href="">Submenu4</a></li>
+					</ul>
+				</li>
+				<li><a href="">Contacto</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

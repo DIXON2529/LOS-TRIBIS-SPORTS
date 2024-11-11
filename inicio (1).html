@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu despegable</title>
+    <link rel="stylesheet" type="text/css" href="dixon.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          
+          
+          
+            <h1>LOS TRIBIS SPORTS</h1>
+        </div>
+       
+    </header>
+ <hr>
+ <div id="header">
+    <ul class="nav">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="quienes somos.html">QUIENES SOMOS</a>
+            <ul>
+                <li><a href="plan estrategico.html">Plan Estrategico</a></li>
+                <li><a href="proyecto.html">Proyecto</a>
+                    <ul>
+                        <li><a href="objetivos.html">objetivos</a></li>
+                        <li><a href="marco teorico.html">M.T</a></li>
+                        <li><a href="marco legal.html">M.L</a></li>
+                        <li><a href="crograma.html">cronograma</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="solucion.html">SOLUCION TECNOLOGICA</a></li>
+        <li><a href="evidencias.html">EVIDENCIAS</a>
+    </ul>
+</div>
+
+    <main>
+        <section class="intro">
+            <h2>Introducción</h2>
+            <p>Bienvenidos a nuestro emocionante mundo de deportes Aquí encontrarás toda la información, noticias y consejos sobre tus deportes favoritos. Únete a nuestra comunidad apasionada por el deporte y descubre todo lo que necesitas para mantenerte activo y saludable</p>
+        </section>
+        
+        <div class="content">
+            <!-- Contenido principal aquí -->
+        </div>
+
+        <footer>
+            
+            <div class="footer">
+                <div class="redes-sociales">
+                    <a href="#"><img src="imagenes/Facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="imagenes/Instagram.png" alt="Instagram"></a>
+                    
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        function showImage(imageId) {
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.style.display = 'none');
+    
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu despegable</title>
+    <link rel="stylesheet" type="text/css" href="dixon.css">
+</head>
+<body>
+	<center><h2>OBJETIVOS</h2></center>
+	<body>
+		<div id="header">
+			<ul class="nav">
+						<li><a href="index2.html">Inicio</a></li>
+						<li><a href="quienes somos.html">QUIENES SOMOS</a></li>
+						<li><a href="plan estrategico.html">Plan estrategico</a></li>
+						<li><a href="proyecto.html">Proyecto</a>
+							<ul>
+								<li><a href="objetivos.html">objetivos</a></li>
+								<li><a href="marco teorico.html">M.T</a></li>
+								<li><a href="marco legal.html">M.L</a></li>
+								<li><a href="crograma.html">Cronogrma</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="content">
+						<!-- Contenido relacionado con el inicio aquí -->
+									
+			</body>
+			<div class="footer">
+				<div class="redes-sociales">
+					<a href="https://www.facebook.com/profile.php?id=61565697273241&mibextid=LQQJ4d"><img src="facebook" alt="Facebook"></a>
+					<a href="https://www.instagram.com/los_tribis_sports?igsh=MWEzNzFiOGg3Nmw0cw%3D%3D&utm_source=qr"><img src="instagram.jpg" alt="Instagram"></a>
+					
+				</div>
+			</div>
+		</foorter>
+	</main>
+	  <main class="area">
+	  <div class="menu2">
+		<button class="menu-button" onclick="showImage('image1')">Objetivos</button>
+		
+	  </div>
+	  <div class="image-container1">
+		  <img id="image1" class="image" src="objetivos.jpeg">
+		  
+
+	
+
+  <script>
+	  function showImage(imageId) {
+		  const images = document.querySelectorAll('.image');
+		  images.forEach(image => image.style.display = 'none');
+  
+		  const selectedImage = document.getElementById(imageId);
+		  selectedImage.style.display = 'block';
+	  }
+  </script>
+</body>
+</html>	
+		</html>

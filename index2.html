@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu despegable</title>
+    <link rel="stylesheet" type="text/css" href="dixon.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="duran.png" alt="Logo" class="logo">
+            <h1>LOS TRIBIS SPORTS</h1>
+        </div>
+       
+    </header>
+ <hr>
+ <div id="header">
+    <ul class="nav">
+        <li><a href="index2.html">Inicio</a></li>
+        <li><a href="">QUIENES SOMOS</a>
+            <ul>
+                <li><a href="plan estrategico.html">Plan Estrategico</a></li>
+                <li><a href="proyecto.html">Proyecto</a>
+                    <ul>
+                        <li><a href="objetivos.html">objetivos</a></li>
+                        <li><a href="marco teorico.html">M.T</a></li>
+                        <li><a href="marco legal.html">M.L</a></li>
+                        <li><a href="crograma.html">cronograma</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="solucion.html">SOLUCION TECNOLOGICA</a></li>
+        <li><a href="evidencias.html">EVIDENCIAS</a></li>
+        
+        <li><a href="index.html"></a><li>
+        <button style="background-color: #10d468c0; color: aliceblue;">ENGLISH</button>
+        
+    </ul>
+</div>
+
+    <main>
+        <section class="intro">
+            <h2>INTRODUCCION</h2>
+            <p>Bienvenidos a nuestro emocionante mundo de futbol Aquí encontrarás toda la información, noticias y consejos sobre el futbol  Únete a nuestra comunidad apasionada por el deporte y descubre todo lo que necesitas para mantenerte activo y saludable.</p>
+            <img src="futbol1.jpeg" alt="Descripción de la imagen" width="220" height="300">
+            <img src="NIÑO.jpg" alt="Descripción de la imagen" width="260" height="300" right="400" top="20" >
+            <img src="niños2" alt="Descripción de la imagen" width="270" height="300" right="400" top="20" >
+            <img src="cancha" alt="Descripción de la imagen" width="280" height="300" right="400" top="20" >
+        </section>
+       
+        
+        <div class="content">
+            <!-- Contenido principal aquí -->
+        </div>
+
+        <footer>
+            
+            <div class="footer">
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/profile.php?id=61565697273241&mibextid=LQQJ4d"><img src="facebook" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/los_tribis_sports?igsh=MWEzNzFiOGg3Nmw0cw%3D%3D&utm_source=qr"><img src="instagram.jpg" alt="Instagram"></a>
+                    
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        function showImage(imageId) {
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.style.display = 'none');
+    
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

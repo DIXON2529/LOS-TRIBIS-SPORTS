@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu despegable</title>
+    <link rel="stylesheet" type="text/css" href="dixon.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <img src="duran.png" alt="Logo" class="logo">
+            <h1>LOS TRIBIS SPORTS</h1>
+        </div>
+       
+    </header>
+ <hr>
+    <nav id="header">
+        <ul class="nav">
+            <li><a href="index2.html">INICIO</a></li>
+            <li><a href="quienes somos.html">QUIENES SOMOS</a>
+                <ul>
+                    <li><a href="plan estrategico.html">Plan Estrategico</a></li>
+                    <li><a href="proyecto.html">Proyecto</a></li>
+                    
+                        
+                </ul>
+            </li>
+            <li><a href="solucion.html">SOLUCIÓN TECNOLÓGICA</a></li>
+            <li><a href="evidencias.html">EVIDENCIAS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>JUEGO</h2>
+            <p></p>
+        </section>
+        
+        <div class="content">
+            <!-- Contenido principal aquí -->
+        </div>
+        <a class="button2"href="https://scratch.mit.edu/projects/1091839756/editor" target="_blank">JUEGO</a>
+
+        <footer>
+            
+            <div class="footer">
+                <div class="redes-sociales">
+                    <a href="#"><img src="facebook" alt="Facebook"></a>
+                    <a href="#"><img src="instagram.jpg" alt="Instagram"></a>
+                    
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        function showImage(imageId) {
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.style.display = 'none');
+    
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

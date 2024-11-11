@@ -1,0 +1,251 @@
+/* Estilo para el banner en el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+body {
+    background-image: url(estadio3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 10px;
+    background-image: url(estadio3.jpg); /* Verde claro para el header */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el logo y el título */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.logo {
+    margin-left: 250px;
+    height: 150px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+
+/* Menú de navegación */
+#header {
+    margin:auto;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(estadio3.jpg); /* Verde oscuro para el menú */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav > li {
+    margin: 0;
+}
+
+.nav li a {
+    background-color: #10d468c0; /* Gris claro para los enlaces del menú */
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 20px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+.nav li a:hover {
+    background-color: #2f8e24;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    border-radius: 10px;
+    background-color: #2f8e24;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0;
+}
+
+/* Botones del menú en el footer */
+.menu-button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #c0f0c0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #a0d0a0;
+}
+
+/* Contenido y Footer */
+main {
+    padding: 100px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+p {
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+}
+.banner-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-slide {
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+.banner-slide .slide {
+    flex: 0 0 80%;
+}
+
+.banner-slide .slide img {
+    width: 70%;
+    height: auto;
+}
+
+/* Estilo para los botones de control */
+.slide-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.slide-controls label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #777;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Estilo para los botones de control seleccionados */
+input[type="radio"]:checked + .slide-controls label {
+    background-color: #f44336;
+}
+
+/* Estilo para ocultar los botones de radio */
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Animación del banner */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  
+  
+}
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(estadio3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.redes-sociales {
+    display: flex;
+}
+
+.redes-sociales img {
+    width: 60px;
+    height: 60px;
+    margin: 0 210px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.2);
+}
